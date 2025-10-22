@@ -13,8 +13,6 @@ How can we explore advanced signature verification without exposing real signatu
 Can we develop architectures combining ResNet, DenseNet, and attention mechanisms purely for research purposes?  
 What design balances **learning robustness, augmentation strategies, and modularity** while remaining fully safe for public release?  
 
-This project answers these questions by providing a **framework-ready, fully synthetic, GitHub-safe template** that demonstrates a professional DL pipeline for signature verification... **without any real signature data or pre-trained models**.
-
 ---
 
 ## 🧰 Tech Stack
@@ -33,33 +31,15 @@ This project answers these questions by providing a **framework-ready, fully syn
 ## 🧩 Workflow
 
 ### 1️⃣ Dataset & Preprocessing
-- Uses **synthetic placeholder images** to demonstrate pipeline functionality.  
-- Aspect ratio preservation, rotation correction, reflection padding.  
-- Conversion of grayscale to 3-channel RGB.  
-- Optional augmentation pipelines for training and validation.
+
 
 ### 2️⃣ Advanced Data Augmentation
-- Geometric transforms (flip, rotation, elastic, perspective)  
-- Color and noise perturbations (CLAHE, gamma, RGB shift, Gaussian/ISO noise)  
-- Occlusion methods (Cutout, CoarseDropout)  
-- Demonstrates how augmentation enhances model robustness without requiring real signatures.
+
 
 ### 3️⃣ Model Architecture
-- Hybrid **ResNet + DenseNet + CBAM Attention**  
-- Residual and dense blocks with batch normalization and dropout  
-- Global pooling (average + max) for richer representation  
-- Binary output head for genuine vs. forged classification  
 
-### 4️⃣ Training Pipeline (Dummy)
-- Synthetic dataset to illustrate training loop  
-- Mixup for improved generalization  
-- Learning rate schedule: warmup + cosine decay with restarts  
-- Custom metrics and callbacks showcasing evaluation style  
 
-### 5️⃣ Safe Deployment Demonstration
-- Model export code preserved **without real trained weights**  
-- Placeholder for TFLite and Keras deployment demonstration  
-- Teaches safe practices for edge/server inference **without sensitive data**
+### 4️⃣ Training Pipeline
 
 ---
 
